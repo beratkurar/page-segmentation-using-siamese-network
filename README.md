@@ -31,25 +31,16 @@ os.environ["CUDA_VISIBLE_DEVICES"]="2"
 ```
 
 ### How to run the project
-1. Create high dense train patches
+1. Create train patches
 ```
-cd hdata
-python3 HighDenseTrainPatchMaker.py
+python3 TrainPatchExtractor.py
 ```
-2. Create validation and test patches
+2. Create test patches
 ```
-cd ldata
-python3 ValidationPatchMaker.py
-python3 TestPatchMaker.py
+python3 TestPatchExtractor.py
 ```
-3. Train FCN
+3. Train FCN and predict test patches
 ```
 python3 siam.py
 ```
-4. Predict test pages
-```
-python3 pagepredictf8.py
-```
-5. See the predictions in the folder called `out`.
-
 
