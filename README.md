@@ -8,7 +8,7 @@ pip install opencv-python
 2. Upgrade keras and set tensorflow background
 ```
 pip uninstall keras
-pip install keras==2.1
+pip install keras==2.1.2
 pip uninstall python-dateutil
 pip install python-dateutil
 vi ~/.keras/keras.json
